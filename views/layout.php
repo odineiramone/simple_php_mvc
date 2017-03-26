@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>A Most Simple PHP MVC</title>
   </head>
   <body>
     <header>
@@ -10,7 +10,7 @@
     </header>
 
       <?php require_once('routes.php') ?>
-      
+
     <footer>
       Made by internet tutorial
     </footer>
