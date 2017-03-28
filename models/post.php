@@ -19,7 +19,7 @@
 
       // we create a list of Post objects from the database results
       foreach($req->fetchAll() as $post){
-        $list = new Post($post['id'], $post['author'], $post['content']);
+        $list[] = new Post($post['id'], $post['author'], $post['content']);
       }
 
       return $list;
