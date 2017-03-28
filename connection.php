@@ -6,7 +6,7 @@
 
     public static function getInstance(){
       if (!isset(self::$instance)) {
-        $pdo_options[PDO::ATTR_ERRMODE] = PDO::ATTR_ERRMODE_EXCEPTION;
+        $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
 
         $host   = Secrets::getDbHost();
         $dbname = Secrets::getDbName();
